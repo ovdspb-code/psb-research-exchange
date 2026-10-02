@@ -1,10 +1,10 @@
 {
-  "snapshot": "4b06570ae17ad3fc07ff",
+  "snapshot": "155bb57762583fd1f9de",
   "source": {
     "program": "SFP",
-    "object": "NEURAL_TRANSFER: completed one fixed pilot, finite-dose prediction NO-GO; PORT-DELTA unchanged",
+    "object": "MAINTENANCE-BOUNDARY: analytic cost boundary and exact four-task restoration control; neural NO-GO unchanged",
     "source_repository": "ovdspb-code/psb",
-    "source_branch": "codex/sfp-neural-predictive-transfer-20261002",
+    "source_branch": "codex/sfp-maintenance-boundary-20261002",
     "original_proof_commit": "91fa8855e19aca5e6566aa0ba60d10aa88d7d571",
     "addendum_commit": "d682be516c60e77c4bb160ee24c1cc898212d772",
     "integration_path": "main:docs/research_exchange",
@@ -13,7 +13,7 @@
     "priority_and_publication": "HOLD",
     "original_359_checks_rerun": false,
     "export_scope": "Explicit scientific allowlist only; private intake, transcripts and unrelated hypotheses excluded",
-    "phase": "EXECUTION_COMPLETED; NO_GO_ON_FINITE_DOSE_PREDICTIVE_TRANSFER; external interpretation pending",
+    "phase": "ANALYTIC_CONTROL_COMPLETE; INDEPENDENT_REVIEW_PENDING; NOVELTY_HOLD",
     "neural_forecast_commit": "5c05b41fa44b851083cd6c08fece1a8bf4dfba9e",
     "neural_forecast_sha256": "daac07fc9ef3fb9c6427a679f7afd0d25e1736a715632433327e5108338a84da",
     "neural_execution_started_utc": "2026-10-02T19:53:58.129475+00:00",
@@ -31,9 +31,13 @@
       "forecasts_json_unchanged": true,
       "scientific_gates_unchanged": true
     },
-    "integration_commit": "8e3b078a2c9b95a403b30a6e28805cd0d451e785"
+    "maintenance_result_commit": "592e8de65e2247c1207f63067c2db8ee7b9cb279",
+    "maintenance_scope": "Exogenous damage; fixed norm; exact current response; one coordinated external actuator; four alternative future tasks",
+    "maintenance_trajectories_executed": 0,
+    "maintenance_independent_review": "PENDING",
+    "integration_commit": "1400d05f39bb5ad3d55cc2669babbef6ccf2ab5e"
   },
-  "dossier_sha256": "e1cd4720fe4aa66f19ff621259f5b0035e8759580c5218625309a17bf363c7ef",
-  "archive_sha256": "ee161b7b3373657d050276e446325d648dfd0ac3494d05deea14ec9561c0520c",
-  "files": 60
+  "dossier_sha256": "8b45b6d4ca912bc0d0a0eaeb12285f20ff6dc494fb76c59f1ff3b595a05139f0",
+  "archive_sha256": "b867fd5cd645aa8a29544110ef2bef682bdbbe2679dc09b4ad1384e04ecca32c",
+  "files": 69
 }

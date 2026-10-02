@@ -1,0 +1,28 @@
+{
+  "status": "EXACT_IDENTITIES_PASS_NOT_INDEPENDENT_AUDIT",
+  "sympy": "1.14.0",
+  "checks": {
+    "Kirchhoff": true,
+    "homogeneity_Jk": true,
+    "fixed_current_response": true,
+    "common_full_physical_gradient": true,
+    "common_norm_conservation": true,
+    "common_first_integral": true,
+    "common_ratio_dynamics": true,
+    "differential_full_physical_gradient": true,
+    "differential_norm_conservation": true,
+    "differential_first_integral": true,
+    "differential_ratio_dynamics": true,
+    "actuator_resource_sphere": true,
+    "actuator_constant_metric_speed": true,
+    "healthy_A_squared": true,
+    "damaged_A_squared": true,
+    "repair_threshold": true
+  },
+  "trajectories_executed": 0,
+  "random_states": 0,
+  "healthy_worst_time_over_B": "10/13",
+  "damaged_worst_time_over_B": "5/2",
+  "scope": "Predefined four tasks; fixed conductance norm; one declared coordinated actuator; exogenous damage",
+  "source_sha256": "21f456059b63f96a0c2d5b048d5a31f92d3326cad445db7ad11d53ba22c24a92"
+}
