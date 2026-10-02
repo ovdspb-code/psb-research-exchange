@@ -1,6 +1,7 @@
 # SFP Research Exchange
 
 One shared read-only review dossier for Oleg Dolgikh, Advisor, Fabl/Claude and Codex.
+Live reading page: https://ovdspb-code.github.io/psb-research-exchange/
 Latest: [complete text](latest/DOSSIER_RU.md), [ZIP](latest/REVIEW_PACKAGE.zip),
 [version and hashes](CURRENT.json). Immutable snapshots are in `snapshots/`.
 
