@@ -1,0 +1,8 @@
+{
+  "prereg_commit": "5c05b41fa44b851083cd6c08fece1a8bf4dfba9e",
+  "forecast_sha256": "daac07fc9ef3fb9c6427a679f7afd0d25e1736a715632433327e5108338a84da",
+  "verified_remote_branch": "codex/sfp-neural-predictive-transfer-20261002",
+  "verified_remote_commit": "5c05b41fa44b851083cd6c08fece1a8bf4dfba9e",
+  "recorded_utc": "2026-10-02T19:50:30.345027+00:00",
+  "paired_histories_started": false
+}

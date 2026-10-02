@@ -1,0 +1,8 @@
+{
+  "status": "PUBLIC_FORECAST_VERIFIED_BEFORE_PAIRED_HISTORIES",
+  "verified_utc": "2026-10-02T19:53:57.476727+00:00",
+  "forecast_sha256": "daac07fc9ef3fb9c6427a679f7afd0d25e1736a715632433327e5108338a84da",
+  "public_snapshot": "aab53392f1bbf0a8fbfc",
+  "integration_commit": "1c1bd8627b7efd93ecbbb28c0c8b72856335b345",
+  "public_forecast_url": "https://raw.githubusercontent.com/ovdspb-code/psb-research-exchange/main/snapshots/aab53392f1bbf0a8fbfc/neural_transfer/FORECASTS.json"
+}
