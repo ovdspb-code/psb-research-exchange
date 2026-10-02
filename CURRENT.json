@@ -1,5 +1,5 @@
 {
-  "snapshot": "9ef03788bcdd6cd8d9c8",
+  "snapshot": "4b06570ae17ad3fc07ff",
   "source": {
     "program": "SFP",
     "object": "NEURAL_TRANSFER: completed one fixed pilot, finite-dose prediction NO-GO; PORT-DELTA unchanged",
@@ -31,9 +31,9 @@
       "forecasts_json_unchanged": true,
       "scientific_gates_unchanged": true
     },
-    "integration_commit": "5de98f4b4539e5dccae01de31e92f248ca0e00ed"
+    "integration_commit": "8e3b078a2c9b95a403b30a6e28805cd0d451e785"
   },
   "dossier_sha256": "e1cd4720fe4aa66f19ff621259f5b0035e8759580c5218625309a17bf363c7ef",
-  "archive_sha256": "37c3bf8e5a824b2988b43d79c8b6673071d74e33079e677c681b3e70a3af660a",
+  "archive_sha256": "ee161b7b3373657d050276e446325d648dfd0ac3494d05deea14ec9561c0520c",
   "files": 60
 }
