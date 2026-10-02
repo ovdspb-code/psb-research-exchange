@@ -1,0 +1,20 @@
+{
+  "snapshot": "37b6c62236863227a02e",
+  "sha256": {
+    "DOSSIER_RU.md": "085ec700b57d7ae5f0c33945213f0d5968835433d68a6b182e0d44568eeb36bc",
+    "SOURCE.json": "db825dd48d30d311bfde99f63cc144e9f25d56c822e64153362bf0e6afe126d3",
+    "port_delta/AUDIT_RU.md": "d6e8c3a7e29ab21c8aee5fc5df57992d14ff9c1467828f18ea5d256780b4902f",
+    "port_delta/CLAIM_LEDGER.md": "98f24a1af395a25430ef080d9767e715a419671f33740ddcd8330dcdebffecd0",
+    "port_delta/PRIOR_ART_STATUS.md": "38670bc357c66f26fc51794b549095ef1d2655292df3fe46be96d79fec865fd5",
+    "port_delta/PROOF_RU.md": "c7aff8e87f6fafebc107a95b535fc0a82b2ca5e1104a2cac4d4d10b76a7b4101",
+    "port_delta/REPORT_RU.md": "e254a6e0fc58142c3842cfd0ee16abf41944de98b530c9ed08df534fe70ebc41",
+    "port_delta/RESULTS.json": "597780c412cfdf9ae68684840a593f84162594272da19f803b405cc344a6f9ff",
+    "port_delta/check_exact.py": "6d0ea782a12231ff77b2f82fe1c0a99ffdd48ad95c8fdea5a900ce534c914905",
+    "port_delta/requirements.txt": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc",
+    "port_delta_addendum/CLAIM_LEDGER.md": "d4363c6c73c6feda5f068aa7babe11672e343dc4481ecbc2b6db23b8aa134ceb",
+    "port_delta_addendum/NOTE_RU.md": "d73efff228d09cf1a5ff6b2200c7b92d79cdc0654f44baf2f7e6c2ede4f5ddab",
+    "port_delta_addendum/RESULTS.json": "a8152e116f164d238446ba4b741a8aada5123e12eac14e2327dd2c21b91c052c",
+    "port_delta_addendum/REVIEW_ENTRY_RU.md": "96c0556d75c02a1bb375aea77920141755079d1a379a6a525860b068340013d1",
+    "port_delta_addendum/check_parallel.py": "a2c0eecd92c73283c30f8cde4f108c4fa4725a1dffce52c14dd8b6ee92fef854"
+  }
+}

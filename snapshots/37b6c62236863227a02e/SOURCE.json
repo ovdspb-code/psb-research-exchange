@@ -1,0 +1,15 @@
+{
+  "program": "SFP",
+  "object": "PORT-DELTA-001 + PORT-DELTA-002",
+  "source_repository": "ovdspb-code/psb",
+  "source_branch": "codex/sfp-port-delta-bound-20261002",
+  "original_proof_commit": "91fa8855e19aca5e6566aa0ba60d10aa88d7d571",
+  "addendum_commit": "d682be516c60e77c4bb160ee24c1cc898212d772",
+  "integration_path": "main:docs/research_exchange",
+  "date": "2026-10-02",
+  "independent_review": "PENDING",
+  "priority_and_publication": "HOLD",
+  "original_359_checks_rerun": false,
+  "new_exact_checks": 25,
+  "export_scope": "13 allowlisted scientific files; no chat transcripts, intake, secrets or third-party libraries"
+}
