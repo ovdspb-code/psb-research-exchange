@@ -2,6 +2,8 @@
 
 One shared read-only review dossier for Oleg Dolgikh, Advisor, Fabl/Claude and Codex.
 Live reading page: https://ovdspb-code.github.io/psb-research-exchange/
+AI web-tool fallback: https://raw.githubusercontent.com/ovdspb-code/psb-research-exchange/main/latest/DOSSIER_RU.md
+Current snapshot: https://raw.githubusercontent.com/ovdspb-code/psb-research-exchange/main/CURRENT.json
 Latest: [complete text](latest/DOSSIER_RU.md), [ZIP](latest/REVIEW_PACKAGE.zip),
 [version and hashes](CURRENT.json). Immutable snapshots are in `snapshots/`.
 
