@@ -1,5 +1,5 @@
 {
-  "snapshot": "5317a878205205695f0f",
+  "snapshot": "9ef03788bcdd6cd8d9c8",
   "source": {
     "program": "SFP",
     "object": "NEURAL_TRANSFER: completed one fixed pilot, finite-dose prediction NO-GO; PORT-DELTA unchanged",
@@ -25,9 +25,15 @@
     "port_delta_addendum_exact_checks": 25,
     "neural_result_commit": "6990f42141de817aa3d2c4ce7a669ba3ada9b47d",
     "neural_author_replay": "Same METRICS bytes and gates; not external acceptance",
-    "integration_commit": "1cc3dc74d0ed2d57642087e86190632cd4c09084"
+    "publication_QA": {
+      "caught_and_corrected": "Integration universal-newline read changed CSV CRLF bytes; lossless UTF-8 decode now preserves source files",
+      "superseded_transport_snapshot": "5317a878205205695f0f",
+      "forecasts_json_unchanged": true,
+      "scientific_gates_unchanged": true
+    },
+    "integration_commit": "5de98f4b4539e5dccae01de31e92f248ca0e00ed"
   },
   "dossier_sha256": "e1cd4720fe4aa66f19ff621259f5b0035e8759580c5218625309a17bf363c7ef",
-  "archive_sha256": "532a5b1a3f4da9dff53983ed517e09e9c5a6a44ffdb7af71c04803a6a540ddbc",
+  "archive_sha256": "37c3bf8e5a824b2988b43d79c8b6673071d74e33079e677c681b3e70a3af660a",
   "files": 60
 }
