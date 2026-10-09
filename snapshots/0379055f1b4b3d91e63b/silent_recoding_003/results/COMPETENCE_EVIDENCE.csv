@@ -1,0 +1,5 @@
+object,evidence,assay,readout,support,limitation
+Y163N / Y42(L)N,DIRECT,yeast scFv: 235 residues,library-pooled binding and expression,lib1 20 + lib2 24 barcodes,two libraries; not 44 biological replicates; no CI asserted
+a/x/R exact DNA,ABSENT,native receptor / matched exact coding,"binding, surface expression, viability and declared competence",0 exact variable DNA matches among 44 mapped Y163N barcodes,same AA does not prove same codon-dependent expression
+Y36N + future substitution,TRANSPORTED,single-mutant DMS additive extrapolation,joint usefulness statuses,accepted 002 conditional map,mature double-mutant binding/expression not measured by single-mutant row
+LC mutation supply,TRANSPORTED,mouse nonfunctional kappa repertoire model to focal active receptor,two-event first protein exit,MK_RS5NF model used in 001/002,no actual ordered focal event observations

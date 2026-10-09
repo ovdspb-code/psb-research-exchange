@@ -1,0 +1,83 @@
+{
+  "focal": [
+    {
+      "role": "FOCAL_ancestor",
+      "length_H": 112,
+      "length_L": 107,
+      "paired_protein_id": "P_abadea0d98857de8",
+      "scFv_position": 163,
+      "IMGT": "Y42(L)N",
+      "LC_S93_codon": "AGC",
+      "variable_AA_same": true
+    },
+    {
+      "role": "FOCAL_current",
+      "length_H": 112,
+      "length_L": 107,
+      "paired_protein_id": "P_abadea0d98857de8",
+      "scFv_position": 163,
+      "IMGT": "Y42(L)N",
+      "LC_S93_codon": "AGT",
+      "variable_AA_same": true
+    },
+    {
+      "role": "FOCAL_rewrite",
+      "length_H": 112,
+      "length_L": 107,
+      "paired_protein_id": "P_abadea0d98857de8",
+      "scFv_position": 163,
+      "IMGT": "Y42(L)N",
+      "LC_S93_codon": "AGC",
+      "variable_AA_same": true
+    }
+  ],
+  "assay": {
+    "HC_residues": [
+      1,
+      112
+    ],
+    "linker_residues": [
+      113,
+      127
+    ],
+    "LC_shared_residues": [
+      128,
+      234
+    ],
+    "extra_terminal_residue": "R",
+    "linker_AA": "GGGGSGGGGSGGGGS"
+  },
+  "libraries": [
+    {
+      "library": "lib1",
+      "variant": "Y163N",
+      "WT_binding_log10Ka": 8.600898937054705,
+      "Y163N_binding_log10Ka": 8.927272165423037,
+      "delta_binding_log10Ka": 0.3263732283683325,
+      "WT_expression_ln": 10.428089,
+      "Y163N_expression_ln": 9.285791,
+      "delta_expression_ln": -1.1422980000000003,
+      "binding_barcode_support": 20,
+      "expression_barcode_support": 20
+    },
+    {
+      "library": "lib2",
+      "variant": "Y163N",
+      "WT_binding_log10Ka": 8.645205773340027,
+      "Y163N_binding_log10Ka": 8.837600527043529,
+      "delta_binding_log10Ka": 0.19239475370350156,
+      "WT_expression_ln": 10.483202,
+      "Y163N_expression_ln": 9.085654,
+      "delta_expression_ln": -1.3975480000000005,
+      "binding_barcode_support": 24,
+      "expression_barcode_support": 24
+    }
+  ],
+  "mean_delta_binding_log10Ka": 0.259383991035917,
+  "mean_delta_expression_ln": -1.2699230000000004,
+  "relative_expression_ratio_interpretation": 0.2808532466458033,
+  "Y163N_barcode_map_rows": 44,
+  "exact_DNA_matches": 0,
+  "raw_FCS_or_sequencing_reanalysed": false,
+  "individual_binding_file_does_not_reproduce_current_pooled_fit": true
+}

@@ -1,19 +1,19 @@
 {
-  "snapshot": "155bb57762583fd1f9de",
+  "snapshot": "0379055f1b4b3d91e63b",
   "source": {
     "program": "SFP",
-    "object": "MAINTENANCE-BOUNDARY: analytic cost boundary and exact four-task restoration control; neural NO-GO unchanged",
+    "object": "SILENT-RECODING-003: exact-encoding competence evidence and event-observation feasibility; prior checkpoints preserved",
     "source_repository": "ovdspb-code/psb",
     "source_branch": "codex/sfp-maintenance-boundary-20261002",
     "original_proof_commit": "91fa8855e19aca5e6566aa0ba60d10aa88d7d571",
     "addendum_commit": "d682be516c60e77c4bb160ee24c1cc898212d772",
     "integration_path": "main:docs/research_exchange",
-    "date": "2026-10-02",
+    "date": "2026-10-09",
     "independent_review": "PENDING",
     "priority_and_publication": "HOLD",
     "original_359_checks_rerun": false,
     "export_scope": "Explicit scientific allowlist only; private intake, transcripts and unrelated hypotheses excluded",
-    "phase": "ANALYTIC_CONTROL_COMPLETE; INDEPENDENT_REVIEW_PENDING; NOVELTY_HOLD",
+    "phase": "FEASIBILITY_CHECKPOINT_COMPLETE; INDEPENDENT_REVIEW_PENDING; BIOLOGY_HOLD",
     "neural_forecast_commit": "5c05b41fa44b851083cd6c08fece1a8bf4dfba9e",
     "neural_forecast_sha256": "daac07fc9ef3fb9c6427a679f7afd0d25e1736a715632433327e5108338a84da",
     "neural_execution_started_utc": "2026-10-02T19:53:58.129475+00:00",
@@ -35,9 +35,13 @@
     "maintenance_scope": "Exogenous damage; fixed norm; exact current response; one coordinated external actuator; four alternative future tasks",
     "maintenance_trajectories_executed": 0,
     "maintenance_independent_review": "PENDING",
-    "integration_commit": "1400d05f39bb5ad3d55cc2669babbef6ccf2ab5e"
+    "previous_object": "MAINTENANCE-BOUNDARY: analytic cost boundary and exact four-task restoration control; neural NO-GO unchanged",
+    "silent_recoding_003_result_commit": "48230c72a729d9e556bc72c5fb2bd3afba91c929",
+    "silent_recoding_003_independent_review": "PENDING",
+    "silent_recoding_003_scope": "No R1 rerun, new candidates, wet-lab work or external contacts; public source libraries fetched by pinned code",
+    "integration_commit": "ed8abc3ae12c52aa453f07f8a30b12bd2219e294"
   },
-  "dossier_sha256": "8b45b6d4ca912bc0d0a0eaeb12285f20ff6dc494fb76c59f1ff3b595a05139f0",
-  "archive_sha256": "b867fd5cd645aa8a29544110ef2bef682bdbbe2679dc09b4ad1384e04ecca32c",
-  "files": 69
+  "dossier_sha256": "6ed203916dbd5c38071de4696986594512cafda6460db6cbd46f6aa5c39f8486",
+  "archive_sha256": "7502fb4c7f857f6ff39ee21d321595aa643249b78e35a9d729937e74c5050148",
+  "files": 106
 }
