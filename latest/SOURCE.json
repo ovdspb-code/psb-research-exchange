@@ -1,8 +1,8 @@
 {
   "program": "SFP",
-  "object": "SILENT-RECODING-003: exact-encoding competence evidence and event-observation feasibility; prior checkpoints preserved",
+  "object": "SILENT-RECODING-004: four-event confidence and functional-map/sample-cost frontier; prior checkpoints preserved",
   "source_repository": "ovdspb-code/psb",
-  "source_branch": "codex/sfp-maintenance-boundary-20261002",
+  "source_branch": "codex/sfp-silent-recoding-004-20261009",
   "original_proof_commit": "91fa8855e19aca5e6566aa0ba60d10aa88d7d571",
   "addendum_commit": "d682be516c60e77c4bb160ee24c1cc898212d772",
   "integration_path": "main:docs/research_exchange",
@@ -11,7 +11,7 @@
   "priority_and_publication": "HOLD",
   "original_359_checks_rerun": false,
   "export_scope": "Explicit scientific allowlist only; private intake, transcripts and unrelated hypotheses excluded",
-  "phase": "FEASIBILITY_CHECKPOINT_COMPLETE; INDEPENDENT_REVIEW_PENDING; BIOLOGY_HOLD",
+  "phase": "FOUR_EVENT_DESIGN_CHECKED; INDEPENDENT_REVIEW_PENDING; BIOLOGY_HOLD",
   "neural_forecast_commit": "5c05b41fa44b851083cd6c08fece1a8bf4dfba9e",
   "neural_forecast_sha256": "daac07fc9ef3fb9c6427a679f7afd0d25e1736a715632433327e5108338a84da",
   "neural_execution_started_utc": "2026-10-02T19:53:58.129475+00:00",
@@ -33,9 +33,14 @@
   "maintenance_scope": "Exogenous damage; fixed norm; exact current response; one coordinated external actuator; four alternative future tasks",
   "maintenance_trajectories_executed": 0,
   "maintenance_independent_review": "PENDING",
-  "previous_object": "MAINTENANCE-BOUNDARY: analytic cost boundary and exact four-task restoration control; neural NO-GO unchanged",
+  "previous_object": "SILENT-RECODING-003: exact-encoding competence evidence and event-observation feasibility; prior checkpoints preserved",
   "silent_recoding_003_result_commit": "48230c72a729d9e556bc72c5fb2bd3afba91c929",
   "silent_recoding_003_independent_review": "PENDING",
   "silent_recoding_003_scope": "No R1 rerun, new candidates, wet-lab work or external contacts; public source libraries fetched by pinned code",
-  "integration_commit": "ed8abc3ae12c52aa453f07f8a30b12bd2219e294"
+  "previous_source_branch": "codex/sfp-maintenance-boundary-20261002",
+  "silent_recoding_003_advisor_review": "COMPUTATIONAL_ACCEPT; exact barcode/full ZIP rerun not independently repeated",
+  "silent_recoding_004_result_commit": "4ec64708ab5f1b4e74732ec0bbbfb8f5c740237a",
+  "silent_recoding_004_independent_review": "PENDING",
+  "silent_recoding_004_scope": "No R1 or 003 rerun, new candidates, mutation simulation or contacts; independent sums/KL/CP with retained source bytes",
+  "integration_commit": "044851ea3113902a29424274f199306749580336"
 }

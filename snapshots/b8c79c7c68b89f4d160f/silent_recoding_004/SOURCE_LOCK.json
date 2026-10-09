@@ -1,0 +1,15 @@
+{
+  "case": "D20_M23_GC102__seq7__seq6",
+  "inputs": "retained R1 bytes plus Advisor reference outputs; reference code never imported/executed",
+  "advisor_input_zip_sha256": "05b61b1bfef470ce70ee57f2188e297e8d606696ec1dfe413553578fcaaef4a7",
+  "sha256": {
+    "advisor_reference/PROJECTED_DESIGN.json": "0e8969fe066a404220fe174fcda071913fbcb9070e1bf96d656c44ee7b586bd8",
+    "advisor_reference/PROPOSED_PANEL_600.csv": "3e2d88b6748d4f6dcc820ad445f429eda6eae6a067b840f68611b43bb2a994e7",
+    "advisor_reference/PROPOSED_PANEL_650.csv": "030f0d358d5cd249e06b5c9bf78e605d2f9ae2264e5bec1b197c242f87c172af",
+    "advisor_reference/PROPOSED_PANEL_800.csv": "612210b23153d4ddc0237957437c299314037469e227b4125b91501710219b5b",
+    "all_destination_weights.csv": "900a9a7a21dc372ce5d79532b1287bac894f038f78ec14f2bc351018b16b10e4",
+    "frozen_candidates.csv": "cdbfdd8371ec874de1f3e84c8bca6ddbd0785eb870d982891a3d78f7a0b24726",
+    "planned_phenotype_panel.csv": "f5af1618a96d87560c434667627bff3cd9f1928cb74178c3a8d5d690549e780e",
+    "planned_starting_constructs.csv": "f8e67017dfcf9e2f74990dcc9a4408e176aecd24deaecaebe8432b8db0596064"
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "scope": "before-new-data planning; not optimality or biological evidence",
+  "frontier": [
+    {
+      "panel_focal": 85,
+      "additional_focal_vs_85": 0,
+      "protein_objects_including_QA_baselines": 107,
+      "absolute_endpoint_family": 214,
+      "alpha_F": 0.025,
+      "alpha_F_per_endpoint": 0.00011682242990654206,
+      "unknown_current_model_mass": 0.3657661862115164,
+      "coarse_loss_model_lower": -0.3576046492354219,
+      "coarse_restore_model_lower": -0.3647058072517881,
+      "KL_n_at_model_frequency_NOT_power": null,
+      "KL_n_sufficient_95pct_conditional_power": null,
+      "KL_n_same_power_bias_1e_4": null,
+      "independent_unit": "iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
+    },
+    {
+      "panel_focal": 600,
+      "additional_focal_vs_85": 515,
+      "protein_objects_including_QA_baselines": 622,
+      "absolute_endpoint_family": 1244,
+      "alpha_F": 0.025,
+      "alpha_F_per_endpoint": 2.009646302250804e-05,
+      "unknown_current_model_mass": 0.003255010753564018,
+      "coarse_loss_model_lower": 0.0044519893089744605,
+      "coarse_restore_model_lower": 0.004371171136127831,
+      "KL_n_at_model_frequency_NOT_power": 80649,
+      "KL_n_sufficient_95pct_conditional_power": 300102,
+      "KL_n_same_power_bias_1e_4": 363627,
+      "independent_unit": "iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
+    },
+    {
+      "panel_focal": 650,
+      "additional_focal_vs_85": 565,
+      "protein_objects_including_QA_baselines": 672,
+      "absolute_endpoint_family": 1344,
+      "alpha_F": 0.025,
+      "alpha_F_per_endpoint": 1.8601190476190478e-05,
+      "unknown_current_model_mass": 0.0013241399428709135,
+      "coarse_loss_model_lower": 0.006381697246287912,
+      "coarse_restore_model_lower": 0.006259191121765144,
+      "KL_n_at_model_frequency_NOT_power": 38468,
+      "KL_n_sufficient_95pct_conditional_power": 143108,
+      "KL_n_same_power_bias_1e_4": 163332,
+      "independent_unit": "iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
+    },
+    {
+      "panel_focal": 800,
+      "additional_focal_vs_85": 715,
+      "protein_objects_including_QA_baselines": 822,
+      "absolute_endpoint_family": 1644,
+      "alpha_F": 0.025,
+      "alpha_F_per_endpoint": 1.5206812652068127e-05,
+      "unknown_current_model_mass": 0.001290213032507976,
+      "coarse_loss_model_lower": 0.006415619728268592,
+      "coarse_restore_model_lower": 0.006291571638309998,
+      "KL_n_at_model_frequency_NOT_power": 38057,
+      "KL_n_sufficient_95pct_conditional_power": 141580,
+      "KL_n_same_power_bias_1e_4": 161474,
+      "independent_unit": "iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
+    }
+  ],
+  "exact_binomial_step": [
+    {
+      "panel": 600,
+      "bias": 0.0,
+      "method": "exact CP confidence + exact binomial power quantiles",
+      "first_passing_n_on_1000_grid_NOT_global_minimum": 179000,
+      "loss_lower": 0.0005116797278566163,
+      "restore_lower": 1.56246702102264e-06,
+      "conditional_power_lower_bound": 0.9506566211662699,
+      "KL_n_comparator": 300102
+    },
+    {
+      "panel": 600,
+      "bias": 0.0001,
+      "method": "exact CP confidence + exact binomial power quantiles",
+      "first_passing_n_on_1000_grid_NOT_global_minimum": 217000,
+      "loss_lower": 0.00047292398536064734,
+      "restore_lower": 1.3120466040156264e-06,
+      "conditional_power_lower_bound": 0.9507574452632281,
+      "KL_n_comparator": 363627
+    },
+    {
+      "panel": 650,
+      "bias": 0.0,
+      "method": "exact CP confidence + exact binomial power quantiles",
+      "first_passing_n_on_1000_grid_NOT_global_minimum": 86000,
+      "loss_lower": 0.0007704610516501113,
+      "restore_lower": 2.0942419582073435e-05,
+      "conditional_power_lower_bound": 0.951366081999345,
+      "KL_n_comparator": 143108
+    },
+    {
+      "panel": 650,
+      "bias": 0.0001,
+      "method": "exact CP confidence + exact binomial power quantiles",
+      "first_passing_n_on_1000_grid_NOT_global_minimum": 98000,
+      "loss_lower": 0.000729866508211087,
+      "restore_lower": 2.1948890391046416e-05,
+      "conditional_power_lower_bound": 0.9507147713879854,
+      "KL_n_comparator": 163332
+    },
+    {
+      "panel": 800,
+      "bias": 0.0,
+      "method": "exact CP confidence + exact binomial power quantiles",
+      "first_passing_n_on_1000_grid_NOT_global_minimum": 85000,
+      "loss_lower": 0.000774516214332395,
+      "restore_lower": 1.7693590978265505e-05,
+      "conditional_power_lower_bound": 0.9512972384881265,
+      "KL_n_comparator": 141580
+    },
+    {
+      "panel": 800,
+      "bias": 0.0001,
+      "method": "exact CP confidence + exact binomial power quantiles",
+      "first_passing_n_on_1000_grid_NOT_global_minimum": 97000,
+      "loss_lower": 0.0007340309393216171,
+      "restore_lower": 2.0057903928151488e-05,
+      "conditional_power_lower_bound": 0.9512323992554054,
+      "KL_n_comparator": 161474
+    }
+  ],
+  "model_masses": {
+    "85": {
+      "ancestor": {
+        "B": 0.00926116264739335,
+        "D": 0.6206161632650783,
+        "U": 0.3701226740875284
+      },
+      "current": {
+        "B": 0.0010996256712988237,
+        "D": 0.6331341881171848,
+        "U": 0.3657661862115164
+      },
+      "rewrite": {
+        "B": 0.014678029483133667,
+        "D": 0.6079623209815099,
+        "U": 0.37735964953535645
+      }
+    },
+    "600": {
+      "ancestor": {
+        "B": 0.03416604054750767,
+        "D": 0.9626473515637053,
+        "U": 0.003186607888787091
+      },
+      "current": {
+        "B": 0.026459040484969193,
+        "D": 0.9702859487614668,
+        "U": 0.003255010753564018
+      },
+      "rewrite": {
+        "B": 0.0417238195724226,
+        "D": 0.9550509086236871,
+        "U": 0.00322527180389032
+      }
+    },
+    "650": {
+      "ancestor": {
+        "B": 0.034228863208952645,
+        "D": 0.9644718293487847,
+        "U": 0.0012993074422626304
+      },
+      "current": {
+        "B": 0.026523026019793818,
+        "D": 0.9721528340373352,
+        "U": 0.0013241399428709135
+      },
+      "rewrite": {
+        "B": 0.04178736177298042,
+        "D": 0.9568987693897099,
+        "U": 0.0013138688373097497
+      }
+    },
+    "800": {
+      "ancestor": {
+        "B": 0.03422895574509514,
+        "D": 0.9645041154885007,
+        "U": 0.0012669287664041518
+      },
+      "current": {
+        "B": 0.026523122984318567,
+        "D": 0.9721866639831734,
+        "U": 0.001290213032507976
+      },
+      "rewrite": {
+        "B": 0.041787456149809284,
+        "D": 0.9569311521985272,
+        "U": 0.001281391651663587
+      }
+    }
+  }
+}

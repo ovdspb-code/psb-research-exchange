@@ -1,3 +1,431 @@
+# silent_recoding_004/REPORT_RU.md
+
+# SILENT-RECODING-004 — результат независимой проверки
+
+2026-10-09. **GO computational. Биологическое восстановление и исполнимость
+ordered readout остаются HOLD.** Подтверждён trade-off Советника и найден
+ещё один стандартный способ снизить достаточное число наблюдений.
+
+## Что независимо проверено
+
+Получен SFP_SILENT_RECODING_003_ADVISOR_REVIEW_20261009.zip, SHA256
+05b61b1bfef470ce70ee57f2188e297e8d606696ec1dfe413553578fcaaef4a7.
+CRC и15 файлов манифеста PASS. Две таблицы Советника побайтно совпадают
+с принятыми R1. Его скрипт прочитан, но не исполнялся и не импортировался:
+суммы и корни KL восстановлены нашим кодом. Точные наборы600/650/800
+совпадают с приложенными панелями; прежние85 входят во все панели.
+Ранжирование читает max трёх supply weights, не знак полезности.
+
+Неравенства l_s<=Phi2(s)<=u_s корректны. Потеря и восстановление
+удостоверяются четырьмя односторонними границами; улучшение следует их
+суммой. Alpha_F=.025, alpha_S=.025 сохранены. Одновременное условное
+покрытие>=.95. Две ancestor статистики вычисляются по одной вложенной
+выборке; независимость четырёх статистик не предполагается. IID внутри
+sampling law и независимость выбора B/D от supply counts обязательны.
+Полный самостоятельный вывод — ANALYTIC_AUDIT_RU.md.
+
+## Цена при той же плановой модели
+
+| Фокальная панель | Парные белковые объекты | Неизвестная масса x | n при частотах=ожиданию, НЕ95% power | n для>=95% conditional power | То же при bias<=1e-4 |
+|---:|---:|---:|---:|---:|---:|
+|85|107|36.5766%|нет|нет|нет|
+|600|622|0.325501%|80 649|300 102|363 627|
+|650|672|0.132414%|38 468|143 108|163 332|
+|800|822|0.129021%|38 057|141 580|161 474|
+
+Числа600/650 и оба значения bias полностью воспроизвелись. Это iid
+ordered histories НА КАЖДЫЙ из3 стартов, не количество sequencing reads,
+clonal descendants или технических повторов. Для650 плановый запас
+loss=.006381697246, restore=.006259191122. Два выбранных назначения
+без исходной model label остаются UNKNOWN, а не0. Другие648 предполагаемые
+метки тоже не являются зрелыми экспериментальными phenotype статусами.
+
+Ориентиры95% power условны на плановой law и успешной будущей классификации;
+они не дают95% вероятности пройти весь biological experiment. Сама вероятность
+разрешить функциональные статусы или подтвердить competence неизвестна.
+Числа при частотах=ожиданию нельзя продавать как размер опыта с той же power.
+
+## Дополнительный стандартный baseline: точная binomial инверсия
+
+Односторонние Clopper–Pearson confidence границы и точные биномиальные
+квантили планирования дают следующие достаточные точки на сетке1000:
+
+| Панель | Без bias | С bias<=1e-4 | Округлённые варианты для обсуждения |
+|---:|---:|---:|---:|
+|600|179 000|217 000|180 000 / 220 000|
+|650|86 000|98 000|90 000 / 100 000|
+|800|85 000|97 000|90 000 / 100 000|
+
+Это ещё около40% экономии относительно KL/Chernoff достаточных чисел.
+Она получена стандартной finite-binomial процедурой, не новым результатом
+SFP и не изменением alpha. Это первые проходящие точки выбранной сетки,
+не доказанные глобальные минимумы. При650,n=100000,b=1e-4 exact union
+power bound=.9508477784; неблагоприятные нижние запасы loss=.0007837772,
+restore=.00007683475. Эти цифры имеют только указанный плановый смысл.
+
+**Рекомендация для консультации:**650 фокальных назначений,672 protein
+objects с сохранёнными QA и baseline, и100000 независимых ordered histories
+на старт, если лаборатория может удостоверить b<=1e-4 и заявленную
+классификацию. CP выбирается до данных как основная supply процедура;
+KL остаётся математическим сравнением. Нельзя выбирать более удачную
+границу после просмотра данных без новой simultaneous гарантии.
+
+## Чем может быть уничтожена экономия
+
+Functional family увеличивается до1344 абсолютных endpoint. Bonferroni
+допуск каждого становится .025/1344=1.86011905e-5 вместо .025/214.
+Все3 baseline включены один раз, включая no-op background. Его нет
+в next-variant panel rows; первоначальный новый runner это выявил assert,
+и family construction исправлена по starting constructs. Accepted R1
+не менялась. Неопределённость baseline переносится во все delta intervals.
+Более строгая marginal confidence цена не выражена в придуманных повторах:
+реальная assay variance, калибровка и стоимость ещё неизвестны.
+
+Статус полезного LC S93R, оставшийся UNKNOWN, делает обе coarse границы
+отрицательными даже при бесконечном n в этой модели. Это не доказательство
+его бесполезности: это демонстрация важности реально разрешённого статуса.
+Если UNKNOWN остаётся LC92Y, достаточная KL цена уже около2.64млн.
+Средняя неизвестная масса сама по себе не заменяет такой проверки.
+
+Bias учитывается дважды в мощности: sampling law сдвигается, затем
+confidence bounds расширяются. При650,b=.001 sufficient KL n≈1.10млн;
+при b=.0015≈83.55млн; b=.002 не позволяет этой консервативной процедуре
+удостоверить модельный сценарий даже в пределе. Это предел процедуры
+и заданного adversarial bias, не NO-GO гипотезе.
+
+Переход650->800 добавляет150 белковых вариантов, сокращая достаточное n
+примерно на1%. Поэтому650 — разумная точка сравнения, не доказанный optimum.
+В иллюстративной ЛИНЕЙНОЙ стоимости C=proteins*c_P+3n*c_H, сравнение
+CP планов600/220000 и650/100000 предпочитает650 при c_P/c_H<7200.
+Это только break-even формула: реальные pooled assays, batch overhead,
+capture и календарный срок не обязаны иметь линейную цену.
+
+События B/BU всё ещё должны корректно распознаваться. Одинаковая конечная
+DNA после двух событий допускает разный первый выход, в том числе N/R
+в фокальном S93 контроле. Если будущая классификация различает эти исходы,
+то даже четыре вероятности не идентифицируются по endpoint alone.
+Смена статистики не восстанавливает порядок, не создаёт IID и не снимает
+отбор, locus transfer или competence. Capture depth/n не равны друг другу;
+n/capture_rate имеет смысл лишь при обоснованном outcome-independent захвате.
+
+## Что передаётся
+
+Новые код, proof, панели, полные функциональные family templates,
+COST_FRONTIER.csv/JSON, exact-binomial comparison, bias/status sensitivity,
+audit и конкретный comparative lab brief. Код проверяет input hashes,
+краевые counts, отрицательный контроль, вложенность ancestor bins и точное
+маловыборочное binomial coverage независимо от CI реализации. Число проверок
+не называется доказательством; proof предъявлен отдельно.
+
+R1 и003 не пересобирались, их runner и старые30/22 проверки не исполнялись.
+Нет новых кандидатов, мутационных симуляций или биологических данных.
+Письмо не отправлено, конструкции не заказаны. Независимое ACCEPT этой
+поставки004 ещё не получено; проверка Советника касалась принятия003.
+
+
+# silent_recoding_004/ANALYTIC_AUDIT_RU.md
+
+# 004 — самостоятельный математический разбор
+
+## Объект и утверждение
+
+Phi2(s)=P_s(z(Y)=1), где Y — первый белковый выход до двух LC NT событий,
+или NO_EXIT. Стопы и NO_EXIT неполезны. Одна общая карта z нужна для a,x,R;
+DNA-зависимый phenotype и неподтверждённый перенос носителя этим условием
+не устраняются. Правило остановки/порядка сохраняется из R1.
+
+На событии F корректного одновременного phenotype coverage, B содержит
+только полезные исходы, D только неполезные; U содержит все остальные.
+Тогда для каждого старта строго
+
+    l_s=P_s(B) <= Phi2(s) <= u_s=P_s(B union U).
+
+Не требуется знать z внутри U, ни предполагать его независимость от истории.
+Масса U не удаляется и не перенормируется. В плановой650-панели два
+исходника без model label остаются U; даже остальные648 — ещё не наблюдения.
+
+Достаточны две границы:
+
+    loss = Phi2(a)-Phi2(x) >= l_a-u_x,
+    restore = Phi2(R)-Phi2(a) >= l_R-u_a.
+
+Если первая положительна, вторая неотрицательна, то rewrite>0 следует
+из точного тождества rewrite=loss+restore. Добавочный тест rewrite не нужен.
+Эта процедура достаточная и может быть слабее сопряжённых R1 границ,
+сохраняющих одну и ту же неизвестную z в разностях. R1 не объявлена неверной.
+
+## Четыре binomial confidence стороны
+
+События: a_B, x_BU, R_B, a_BU. При фиксированном n независимых одинаково
+распределённых историй в каждом старте каждое число K имеет Bin(n,p).
+Две ancestor статистики вычисляются по ОДНОЙ выборке и вложены; они не
+независимы. Между стартами также не требуется независимость для union bound.
+
+Положим eta=alpha_S/4=.00625 и c=ln(1/eta)/n. Для q=K/n:
+
+    L(q)=inf{p: kl(q,p)<=c}, U(q)=sup{p: kl(q,p)<=c}.
+
+На краях L(0)=0, U(1)=1. Неиспользованные стороны не входят в error family.
+Chernoff даёт P_p(L(q)>p)<=eta и P_p(U(q)<p)<=eta: событие исключения p
+является соответствующим односторонним отклонением q с n kl(q,p)>ln(1/eta).
+Значит совместно четыре стороны покрывают истинные вероятности с риском
+не выше4eta=.025. Код независимо инвертирует KL бисекцией с округлением
+наружу. Нельзя подменить kl(q,p) на kl(p,q): последний используется только
+при расчёте отклонений частоты в плановой мощности.
+
+При удостоверенном |p_obs(E)-p_target(E)|<=b для требуемых событий, границы
+исправляются как max(0,L-b) и min(1,U+b). Число b должно включать либо
+раздельно обосновывать порядок событий, классификацию readout, censoring,
+перенос носителя и batch law; label uncertainty уже в U и не прячется в b.
+Положительное численное заключение без доказательства этого условия —
+условный арифметический результат, не biological certificate.
+
+## Совместная функциональная неопределённость
+
+Для panel=m сохраняются19 QA вариантов и ВСЕ3 общих baseline, включая
+no-op background, у которого нет строк next-variant в phenotype panel.
+Семья содержит2(m+22) абсолютных endpoint; при650 это1344. Каждому
+назначается допустимая маргинальная ошибка .025/1344. Нельзя оставить .025/214.
+
+Delta interval каждого варианта вычисляется как L_variant-U_baseline,
+U_variant-L_baseline. Baseline не точечный и включён один раз. B требует
+binding lower>.3 и expression lower>=-.3; D требует binding upper<=.3
+либо expression upper<-.3. Остальные — U. Assay scales должны совпадать
+с объявленными; ln expression не смешивается с log10 или viability.
+
+Bonferroni по полной заранее объявленной семье даёт P(F)>=.975 при
+действительных marginal intervals. Если B/D выбраны по phenotype данным,
+нужна независимая supply-выборка или отдельная доказанная conditional/uniform
+гарантия. В частности нельзя выбирать B по удачным supply counts.
+На каждом допустимом фиксированном phenotype результате P(S|phenotype)
+>=.975, и P(F intersect S)>=1-.025-.025=.95. Это не требует независимости
+между F и S, но требует обоснованности conditional sampling contract.
+
+## Мощность — отдельный расчёт
+
+Плановые вероятности не являются данными. Условно на этих вероятностях
+и успешной заявленной классификации положим beta=.05, по beta/4 на
+четыре неблагоприятных отклонения. Корни kl(q,p)=ln(4/beta)/n дают q_minus,
+q_plus. Монотонность L,U позволяет подставить эти частоты в confidence
+границы. Если оба сравнения проходят, вероятность одновременного прохода
+не меньше.95. Это sufficient conditional power; не overall power вместе
+с неизвестной вероятностью успеха phenotype/competence измерений.
+
+При bias плановая observation law сдвигается на p-b для нижней стороны
+и p+b для верхней. ПОСЛЕ расчёта границы ещё расширяются на b. Поправка
+только один раз завышает power. В пределе n->infinity худшие плановые
+запасы равны g_loss-4b и g_restore-4b. Это ограничение данной процедуры
+при данном adversarial bias и модельном сценарии, не запрет гипотезы.
+
+Значение n при q=p — ещё более слабый смысл: оно описывает гипотетический
+набор частот ровно у ожидания, но не обеспечивает95% вероятности такого
+результата. Оба смысла сохранены отдельными колонками COST_FRONTIER.csv.
+
+## Один стандартный более сильный статистический baseline
+
+Также проверена fixed-time односторонняя Clopper–Pearson инверсия:
+
+    L_CP(k)=Beta^{-1}(eta;k,n-k+1) при k>0, иначе0;
+    U_CP(k)=Beta^{-1}(1-eta;k+1,n-k) при k<n, иначе1.
+
+Она имеет те же four-side/phenotype error budgets. Для95% conditional
+power использованы точные Bin(n,p_obs) квантили: k_minus=Q(beta/4),
+k_plus=Q(1-beta/4). P(K<k_minus)<=beta/4, P(K>k_plus)<=beta/4.
+Корреляции между событиями не мешают union bound. После CP inversion
+и bias correction проверяются оба сравнения. Численно используются
+стандартные scipy.stats.beta/binom; независимо проверены хвосты квантилей.
+Первый прошедший n на сетке1000 — достаточная точка этой сетки, НЕ
+доказанный глобальный минимум: дискретные квантили могут давать ступени.
+
+## Действительные границы вывода
+
+Панели фиксированы по max supply mass и не читают знак полезности.
+Это разрешённый before-new-data design, не доказательство его оптимальности.
+Смена статистического интерфейса не меняет Phi2, но меняет потребность
+в phenotype информации. Точные события должны физически наблюдаться:
+endpoint-only ambiguity из003 этим расчётом не снимается. Нет новых
+мутационных симуляций, антител, биологических наблюдений или внешних действий.
+
+
+# silent_recoding_004/EXPERIMENTAL_QUESTIONS_RU.md
+
+# 004 — предмет сравнения с экспериментатором
+
+Письмо не отправлено. Нет заказа или протокола вмешательства.
+
+Сравниваются: прежние107 protein objects и674.8–824.8млн независимых
+ordered histories/старт для full-distribution TV процедуры;622 объекта
+и CP ориентир220000/старт при b<=1e-4;672 объекта и CP ориентир100000/старт
+при том же bias. KL controls:370000/170000. Все числа before-new-data,
+условны на law и реально разрешённых phenotype статусах.
+
+1. Как сравнить компетенцию exact a/x/R при одинаковом парном белке в
+   выбранном носителе? Какая calibrated шкала binding/expression доступна,
+   как обосновать absolute competence и equivalence margins отдельно от
+   порогов usefulness следующих мутаций? Yeast protein DMS не закрывает DNA.
+2. Можно ли наблюдать именно first protein exit за<=2 LC NT events, включая
+   silent первый шаг, stops и NO_EXIT? Если нет, какой observable или
+   независимо проверенный transition kernel даёт эти4 события и почему?
+   Обычный two-mutation endpoint недостаточен даже для B/BU групп.
+3. Как определить независимую историю и исключить подсчёт клональных
+   потомков как независимых единиц? Какие capture, lineage, attrition,
+   species/locus transfer и selection эффекты останутся? Что позволяет
+   удостоверить суммарную event-probability ошибку<=1e-4 на старт?
+4. Какова реальная стоимость/срок карты622 против672 объектов и полного
+   набора ordered histories? Возможны ли pooled measurements, и каким
+   становится marginal coverage при1344 endpoint и всех3 shared baseline?
+   Не просим просто214 старых интервалов дополнить новыми с прежним alpha.
+5. Можно ли разрешить важные статусы, прежде всего S93R, без подстановки
+   additive labels? Какие одновременные интервалы позволяют это заявить?
+   При UNKNOWN S93R coarse certificate теряет смысл даже при бесконечном n.
+6. Возможно ли freeze phenotype panel/классификацию независимо от supply
+   counts и выполнить fixed-n CP? Если понадобится пилот/adaptive stop,
+   какой действительный sequential/split-sample contract его покрывает?
+
+Нужны ответы об исполнимости и цене, не согласие с модельным результатом.
+Negative response может отвергнуть конкретный дизайн; biological hypothesis
+не объявляется опровергнутой. После консультации дизайн и бюджет фиксируются
+отдельно до новых данных; текущий документ ничего не запускает.
+
+
+# silent_recoding_004/CLAIM_LEDGER.md
+
+# 004 — claim ledger
+
+| Claim | Status / scope |
+|---|---|
+| Four fixed events suffice to bound loss/restore | Analytic, conditional on shared functional map and valid classes |
+| Coverage>=.95 at alpha_F=.025,alpha_S=.025 | Conditional theorem; valid marginal intervals, sampling law and bias required |
+| Advisor KL counts and panels600/650/800 reproduced | Independently confirmed from byte-verified R1 tables, not by running Advisor code |
+| Panel650 needs143108/163332 histories under zero/1e-4 bias | Sufficient>=95% conditional planning power, not empirical outcome or minimum |
+| Exact binomial method gives86k/98k grid points | Standard CP plus exact quantile planning; sufficient grid points, not global minimum |
+| Panel650+n100000 with bias<=1e-4 | Recommended before-data consultation scenario; real probabilities and class success unknown |
+| Extended functional family is1344 absolute endpoints | Inventory with19 QA variants and ALL3 baseline; no assay replicates invented |
+| Additional650 statuses are known | EXCLUDED:648 have model labels,2 remain model UNKNOWN; all actual statuses NOT_MEASURED |
+| Endpoint sequencing identifies4 events | EXCLUDED in general; first-exit ambiguity persists |
+| 100000 reads/descendants equal100000 independent histories | EXCLUDED |
+| Biological rescue/competence verified | EXCLUDED; HOLD |
+| Cost frontier is globally optimal or a laboratory quote | EXCLUDED |
+| 003/R1 changed or rerun | EXCLUDED; only new004 code executed |
+| Independent004 ACCEPT obtained | EXCLUDED; pending |
+| Consultation sent or constructs ordered | EXCLUDED; draft only |
+
+The gain is in allocating information and using standard exact confidence,
+not discovering Chernoff, Clopper–Pearson or a new statistical SFP theorem.
+
+
+# silent_recoding_004/LAB_BRIEF_EN.md
+
+# Comparative feasibility brief — DRAFT, NOT SENT
+
+We seek a technical assessment of three before-new-data designs for the same
+antibody history, exact ancestor/current/synonymous-rewrite DNA, and first
+protein exit within two light-chain nucleotide events. No experimental
+rescue, equivalence of the DNA encodings or collaborator participation is claimed.
+
+Existing yeast-scFv data directly characterize the common Y36N protein in
+two libraries; they do not validate all three exact encodings in the intended
+cellular carrier. Binding uses log10Ka and expression the source ln-fluorescence
+score. Competence/equivalence must be calibrated separately from thresholds
+for useful subsequent mutations.
+
+The original design uses107 protein objects and a sufficient distribution-free
+budget of675–825 million independent ordered histories per start. Alternatives:
+
+| Protein objects, including controls and baselines | Focal variant panel | Sufficient planning histories per start |
+|---:|---:|---:|
+|622|600|220000 using exact binomial confidence; KL control370000|
+|672|650|100000 using exact binomial confidence; KL control170000|
+
+Both alternative rows assume a certified event-probability bias<=1e-4 per
+start and the stated future functional classification. They provide>=95%
+conditional planning power, not predicted experimental success. There are
+three starts. The672-object design requires simultaneous uncertainty for1344
+absolute binding/expression endpoints, with all3 shared baselines included.
+Functional and supply error budgets remain .025 each.
+
+We estimate four fixed event probabilities (confirmed-useful and
+useful-or-unclassified classes), retaining unknowns conservatively. This
+reduces statistical dimension but does not make terminal sequencing sufficient:
+the same endpoint can hide different first protein exits. We would like to ask:
+
+1. Can the exact encodings be compared for competence with justified margins
+   in the relevant carrier and calibrated assay scales?
+2. Is a mouse-kappa passenger/matched-context readout capable of resolving
+   the required event order, stops and no-exit, or is there a separately
+   validated transition model that identifies these event probabilities?
+3. What units are genuinely independent histories, and what evidence could
+   bound capture, selection, repair/locus transfer and misclassification bias?
+4. What are realistic costs and timelines for622 versus672 protein objects
+   and the corresponding independent history budgets, including calibrated
+   simultaneous phenotype intervals rather than only technical replicate counts?
+5. Can critical functional statuses such as LC S93R be resolved? If it remains
+   unclassified, this coarse certificate can fail regardless of sample size.
+6. Can functional bins be fixed independently of supply counts and fixed-n
+   inference, or a justified split/sequential alternative, be implemented?
+
+No animal work, constructs, purchases or full panel are requested by this draft.
+Its purpose is to compare feasible observation contracts and costs before any
+experimental authorization. A negative feasibility assessment is informative.
+
+
+# silent_recoding_004/AUDIT_RU.md
+
+# 004 — adversarial audit (15 пунктов)
+
+1. **Finite-sample noise:** coverage и conditional power разделены. KL и
+   exact CP имеют аналитические marginal гарантии; точная small-n PMF
+   проверка независима от CI construction, но не заменяет общий proof.
+2. **Density artifact:** размер2141 больше не входит в binomial confidence;
+   полнота B/D/U и измеренная неизвестная масса остаются существенными.
+3. **Event-size artifact:** фиксированный бюджет<=2 LC событий, first exit,
+   stops и NO_EXIT сохранены. Нет подмены Hamming distance количеством событий.
+4. **Hidden common input:** ancestry/clonal descendants нельзя считать IID.
+   Общая ancestor выборка явно вложенная; union bound не требует её независимости.
+5. **Mixture contexts:** наличие species/locus/repair/batch mixtures не закрыто;
+   требуется допустимая law и удостоверенный event bias, не просто ещё больше n.
+6. **Temporal nonstationarity:** fixed-n и одинаковая sampling law внутри start;
+   drift/adaptive stopping не покрыты без отдельной гарантии.
+7. **Binning/windowing:** B/BU не идентифицируются endpoint-only в общем случае.
+   Пример003 остаётся препятствием; новые бинарные bins не стирают порядок.
+8. **Leakage:** priority не использует expected usefulness; панели фиксируются
+   до новых данных. Functional bins выбираются независимо от supply sample.
+   Ретроспективная model-conditioned focal selection не является подтверждением
+   на новых данных; discovery19 cases и планирование явно отделены.
+9. **Multiplicity:** four supply стороны alpha_S/4, функциональная семья
+   пересчитана1244/1344/1644. Все3 baseline сохранены. Post-data выбор CP/KL
+   запрещён без новой совместной гарантии. Coverage!=power!=биологическая95%.
+10. **Stronger baseline:** точная binomial CP существенно улучшает KL sufficient
+    counts; это стандартная статистика. Полные TV bounds не объявлены нижней ценой.
+11. **Latent explanation:** экономия является дизайном наблюдений, не causal
+    доказательством механизма. Native competence и общий G не установлены.
+12. **Carrier:** тот же focal protein/DNA, те же7 starting roles/контроли,
+    три baseline. Истории, reads и protein objects считаются раздельно.
+13. **Observable relevance:** непосредственно Phi2, loss/restore; rewrite
+    выводится суммой. Более консервативные coarse границы допускают ложный HOLD,
+    но не меняют желаемое утверждение при действительных предпосылках.
+14. **Generalization:** числа относятся к одной фиксированной плановой law,
+    будущей классификации и выбранному readout. Не универсальный laboratory n,
+    не optimum по носителям и не новая теорема SFP.
+15. **Falsification:** если class intervals не разрешают S93R или bias/readout
+    не закрывает условия, соответствующий дизайн отвергается/остаётся HOLD.
+    Неположительные coarse bounds не опровергают саму biological hypothesis.
+
+Программные контроли: positive arithmetic example, null frequencies, false
+ancestor nesting, unequal ancestor n, invalid/boolean/fractional/out-of-range
+counts, отсутствующие события; оба метода fail closed. Контроли не являются
+биологическими наблюдениями и не называют число assertions доказательством.
+
+Исполнение: первый новый004 запуск остановился assert на ошибочном выводе
+числа baseline из variant panel. No-op background находится только в starting
+roles; family source исправлена до выпускного результата. Старого success
+receipt при отказе не было. Следующий расчёт прошёл. После добавления CP count
+interface выполнен один целевой новый replay004. Accepted R1/003 не исполнялись.
+
+GO на статистический дизайн. Внешняя независимая приёмка004 ожидается.
+HOLD biological/event feasibility. Нет отправки письма, покупки или вмешательства.
+
+
 # silent_recoding_003/REPORT_RU.md
 
 # SFP-SILENT-RECODING-003 — feasibility result

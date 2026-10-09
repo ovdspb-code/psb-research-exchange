@@ -1,0 +1,13 @@
+{
+  "advisor_input_zip_sha256": "05b61b1bfef470ce70ee57f2188e297e8d606696ec1dfe413553578fcaaef4a7",
+  "advisor_input_CRC": "PASS",
+  "advisor_manifest_entries_verified": 15,
+  "R1_table_bytes_identical": true,
+  "advisor_code_executed": false,
+  "retained_R1_or_003_code_executed": false,
+  "003_public_snapshot_reviewed_by_advisor": "f98af99dfe64c9bae891f42bfa39949b0e5bc59d",
+  "003_manifest_sha256_unchanged": "42cf29bc74c9695b3ea15f63b3b1b15c696acae7d9e76ee9f2d03b61b9182b49",
+  "scientific_scope": "same focal, criterion, N2, thresholds; new before-data measurement design only",
+  "004_initial_failure": "missing no-op baseline when incorrectly inferred from variant panel; fixed from starting construct roles before release",
+  "new_runtime": "isolated runtime004; packages pinned in requirements.txt"
+}

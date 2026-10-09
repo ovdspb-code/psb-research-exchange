@@ -1,0 +1,32 @@
+{
+  "status": "EXECUTION_COMPLETED_NOT_SCIENTIFIC_ACCEPTANCE",
+  "started_utc": "2026-10-02T19:53:58.129475+00:00",
+  "completed_utc": "2026-10-02T19:54:01.412478+00:00",
+  "wall_seconds": 3.282970333006233,
+  "environment": {
+    "python": "3.11.14 | packaged by conda-forge | (main, Jan 27 2026, 00:01:01) [Clang 19.1.7 ]",
+    "executable": "/Users/ovd/miniforge3/envs/crn_clean/bin/python3",
+    "numpy": "2.4.3",
+    "scipy": "1.17.0",
+    "platform": "macOS-26.5.2-arm64-arm-64bit",
+    "learning_rule": "Euclidean mean-square gradient flow; no optimizer memory",
+    "advisor_recommended_model": "GPT-6.1 Sol high",
+    "actual_codex_model_effort": "not exposed by available runtime metadata; no override claimed"
+  },
+  "forecast_sha256": "daac07fc9ef3fb9c6427a679f7afd0d25e1736a715632433327e5108338a84da",
+  "prereg_commit": "5c05b41fa44b851083cd6c08fece1a8bf4dfba9e",
+  "seed_files": {
+    "seed_101.json": "1bfa69020745859c7f01d05fafd11363211f3714b310709a3a4bddd06213edba",
+    "seed_102.json": "a2d95414c766a3d1c5faedf3f282428736aaaae1e6a1929279be013049bda0a0",
+    "seed_103.json": "0042d472c5adcf4c04fd0b5c37c4fa78c32bc4a4d22d7907fdecf882ae43aa62",
+    "seed_104.json": "973a6054f701b01979c5df82c767a878eb9fcea7e3018ff4dcb88929bc328e33",
+    "seed_105.json": "af3fdbe72b660e3c522aa1060343cd33fa637d04053c22250ddac6035aac2891",
+    "seed_106.json": "11e35a9551bdc9e98506fb8ad06f0b0a7bcb2ba80170daa1b4ddc76bdc474724",
+    "seed_107.json": "0e13124de5345497a1d31cfea57ba286690ea5167f174ded13014c8f6872cb63",
+    "seed_108.json": "e328a84cd4a95f47f583299b4733ca1f14d6542bf5cad2217c9453bc3fa19732",
+    "seed_109.json": "8a349b52c8eee71352443ca93877deacdeea0c0c8e23db3fd07abc2e08708f3d",
+    "seed_110.json": "c8aa942e50c56c14d0edaf42cdc123e866ef7c47ff265f46a74a5e031a1ff437",
+    "seed_111.json": "0da1c78e96ca469b3ef073b5780880e233da3579d64f24b098b4e8b8dd704a02",
+    "seed_112.json": "335573dd6fe734ee62748c09aa3cf8733ffaca141ae94c88773864e501350d49"
+  }
+}

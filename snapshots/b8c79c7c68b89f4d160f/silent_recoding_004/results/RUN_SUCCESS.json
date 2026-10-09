@@ -1,0 +1,7 @@
+{
+  "exit": 0,
+  "status": "NEW_004_CALCULATION_COMPLETE",
+  "biological_measurements": false,
+  "script_sha256": "6558369d85a033d033be9cd6cd26b903ed21ca876f3db7d7b73419bf428b7703",
+  "statistical_module_sha256": "a4e9a1bdc2e861f10fc8ed4cc56595feeaaf78994f9ce016cddcc38392dfa253"
+}

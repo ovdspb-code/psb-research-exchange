@@ -1,0 +1,217 @@
+{
+  "scope": "prospective design calculation only; no new biological measurements, no alteration of 001/002/R1 or 003",
+  "case": "D20_M23_GC102__seq7__seq6",
+  "input_sha256": {
+    "all_destination_weights.csv": "900a9a7a21dc372ce5d79532b1287bac894f038f78ec14f2bc351018b16b10e4",
+    "planned_phenotype_panel.csv": "f5af1618a96d87560c434667627bff3cd9f1928cb74178c3a8d5d690549e780e"
+  },
+  "alpha_S": 0.025,
+  "alpha_F_unchanged": 0.025,
+  "conditional_power_target": 0.95,
+  "unknown_statuses_remain_unknown": true,
+  "baseline_n_reproduced": {
+    "subset_Hoeffding": 824828591,
+    "McDiarmid": 674754793
+  },
+  "frontier": [
+    {
+      "proposed_total_focal_statuses": 85,
+      "assumed_resolved_statuses": 85,
+      "known_useful": [
+        0.009261162647393201,
+        0.0010996256712987001,
+        0.0146780294831336
+      ],
+      "unresolved_mass": [
+        0.3701226740875035,
+        0.3657661862114924,
+        0.37735964953533135
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": -0.35760464923539786,
+        "rewrite": -0.3521877823996575,
+        "restore": -0.3647058072517631
+      },
+      "n_per_start_at_model_frequencies_zero_bias": null,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": null,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": null
+    },
+    {
+      "proposed_total_focal_statuses": 400,
+      "assumed_resolved_statuses": 399,
+      "known_useful": [
+        0.0320632279009144,
+        0.024317711049564778,
+        0.039883098121516296
+      ],
+      "unresolved_mass": [
+        0.04431234315704199,
+        0.04513724521790454,
+        0.04399853922874836
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": -0.037391728366554924,
+        "rewrite": -0.029571858145953023,
+        "restore": -0.03649247293644009
+      },
+      "n_per_start_at_model_frequencies_zero_bias": null,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": null,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": null
+    },
+    {
+      "proposed_total_focal_statuses": 550,
+      "assumed_resolved_statuses": 548,
+      "known_useful": [
+        0.034057541594968294,
+        0.026348550510657976,
+        0.04163303929846791
+      ],
+      "unresolved_mass": [
+        0.008511065254776004,
+        0.008677274983916863,
+        0.00859154003611904
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": -0.0009682838996065458,
+        "rewrite": 0.006607213803893067,
+        "restore": -0.0009355675512763909
+      },
+      "n_per_start_at_model_frequencies_zero_bias": null,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": null,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": null
+    },
+    {
+      "proposed_total_focal_statuses": 560,
+      "assumed_resolved_statuses": 558,
+      "known_useful": [
+        0.034057541594968294,
+        0.026348550510657976,
+        0.04163303929846791
+      ],
+      "unresolved_mass": [
+        0.007253179481144304,
+        0.007396283009052465,
+        0.007319299225963237
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": 0.0003127080752578521,
+        "rewrite": 0.007888205778757465,
+        "restore": 0.0003223182223553089
+      },
+      "n_per_start_at_model_frequencies_zero_bias": 15535619,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": 57820972,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": null
+    },
+    {
+      "proposed_total_focal_statuses": 600,
+      "assumed_resolved_statuses": 598,
+      "known_useful": [
+        0.03416604054750609,
+        0.026459040484967878,
+        0.04172381957242157
+      ],
+      "unresolved_mass": [
+        0.0031866078887870393,
+        0.0032550107535639396,
+        0.003225271803890234
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": 0.004451989308974273,
+        "rewrite": 0.012009768333889753,
+        "restore": 0.00437117113612844
+      },
+      "n_per_start_at_model_frequencies_zero_bias": 80649,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": 300102,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": 363627
+    },
+    {
+      "proposed_total_focal_statuses": 650,
+      "assumed_resolved_statuses": 648,
+      "known_useful": [
+        0.03422886320895107,
+        0.026523026019792506,
+        0.04178736177297939
+      ],
+      "unresolved_mass": [
+        0.001299307442262579,
+        0.0013241399428708383,
+        0.0013138688373096627
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": 0.006381697246287726,
+        "rewrite": 0.013940195810316046,
+        "restore": 0.006259191121765742
+      },
+      "n_per_start_at_model_frequencies_zero_bias": 38468,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": 143108,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": 163332
+    },
+    {
+      "proposed_total_focal_statuses": 700,
+      "assumed_resolved_statuses": 698,
+      "known_useful": [
+        0.03422886320895107,
+        0.026523026019792506,
+        0.04178736177297939
+      ],
+      "unresolved_mass": [
+        0.001271634074800456,
+        0.0012951428937518444,
+        0.001286190389400568
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": 0.00641069429540672,
+        "rewrite": 0.01396919285943504,
+        "restore": 0.0062868644892278645
+      },
+      "n_per_start_at_model_frequencies_zero_bias": 38116,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": 141800,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": 161742
+    },
+    {
+      "proposed_total_focal_statuses": 750,
+      "assumed_resolved_statuses": 748,
+      "known_useful": [
+        0.034228943308225596,
+        0.0265231099511822,
+        0.04178744346510704
+      ],
+      "unresolved_mass": [
+        0.0012672103357942153,
+        0.0012905080317702393,
+        0.0012816788101324022
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": 0.006415325325273158,
+        "rewrite": 0.0139738254821546,
+        "restore": 0.006291289821087226
+      },
+      "n_per_start_at_model_frequencies_zero_bias": 38060,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": 141593,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": 161490
+    },
+    {
+      "proposed_total_focal_statuses": 800,
+      "assumed_resolved_statuses": 798,
+      "known_useful": [
+        0.03422895574509357,
+        0.026523122984317256,
+        0.04178745614980825
+      ],
+      "unresolved_mass": [
+        0.0012669287664041,
+        0.0012902130325079,
+        0.0012813916516634999
+      ],
+      "coarse_true_contrast_model_lower": {
+        "loss": 0.006415619728268413,
+        "rewrite": 0.013974120132983095,
+        "restore": 0.006291571638310581
+      },
+      "n_per_start_at_model_frequencies_zero_bias": 38057,
+      "n_per_start_sufficient_for_95pct_conditional_power_zero_bias": 141580,
+      "n_per_start_sufficient_for_95pct_conditional_power_bias_1e_4": 161474
+    }
+  ],
+  "definition_power": "If true law equals the planning masses and functional labels resolve as stated, four Chernoff deviations at beta/4 ensure positive two contrast bounds with probability >=.95. For nonzero bias the calculation shifts the sampling law adversely AND subtracts the bias from the reported confidence bounds. This is not empirical power or a universal n guarantee."
+}

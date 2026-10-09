@@ -1,0 +1,5 @@
+panel_focal,additional_focal_vs_85,protein_objects_including_QA_baselines,absolute_endpoint_family,alpha_F,alpha_F_per_endpoint,unknown_current_model_mass,coarse_loss_model_lower,coarse_restore_model_lower,KL_n_at_model_frequency_NOT_power,KL_n_sufficient_95pct_conditional_power,KL_n_same_power_bias_1e_4,independent_unit
+85,0,107,214,0.025,0.00011682242990654206,0.3657661862115164,-0.3576046492354219,-0.3647058072517881,,,,"iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
+600,515,622,1244,0.025,2.009646302250804e-05,0.003255010753564018,0.0044519893089744605,0.004371171136127831,80649,300102,363627,"iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
+650,565,672,1344,0.025,1.8601190476190478e-05,0.0013241399428709135,0.006381697246287912,0.006259191121765144,38468,143108,163332,"iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
+800,715,822,1644,0.025,1.5206812652068127e-05,0.001290213032507976,0.006415619728268592,0.006291571638309998,38057,141580,161474,"iid ordered histories per start, 3 starts; NOT reads/clonal descendants"
