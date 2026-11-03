@@ -1,0 +1,12 @@
+{
+  "sha256": {
+    "AUDIT_RU.md": "d369af5eab0cc2da44add228e8d06ec23512344935da715f848898ba30258720",
+    "PROOF_RU.md": "9c0bdcfa57216f6a0cbc4f94790d5cd5553ef79167e88eefaf898df29705a3c4",
+    "README.md": "6f3f927ea17fa031a4ec89c8ef65f27b659544c81a4f1cd945ba2ae3dfade45a",
+    "REPORT_RU.md": "bd3f2a9cae3dc9839fe92788b17145e94b6db658cf7862954c4059707ad19a4d",
+    "RESULTS.json": "b513be7b23b4ab24d58ca210a346728ea64b4486866f170a40de326e5b9d469f",
+    "check_symbolic.py": "21f456059b63f96a0c2d5b048d5a31f92d3326cad445db7ad11d53ba22c24a92",
+    "project_log.md": "44e27cec4ea95fb56ad65c1257c7d07107dc591323f1822d55b4c663b6ac35d5",
+    "requirements.txt": "25f9f1fb1988b230147a1d3092d34e09c069eb7a6c6d6df46b3973b9f2d36efc"
+  }
+}

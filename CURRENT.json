@@ -1,5 +1,5 @@
 {
-  "snapshot": "b8c79c7c68b89f4d160f",
+  "snapshot": "c7e8a33fd069148b00cc",
   "source": {
     "program": "SFP",
     "object": "SILENT-RECODING-004: four-event confidence and functional-map/sample-cost frontier; prior checkpoints preserved",
@@ -44,9 +44,9 @@
     "silent_recoding_004_result_commit": "4ec64708ab5f1b4e74732ec0bbbfb8f5c740237a",
     "silent_recoding_004_independent_review": "PENDING",
     "silent_recoding_004_scope": "No R1 or 003 rerun, new candidates, mutation simulation or contacts; independent sums/KL/CP with retained source bytes",
-    "integration_commit": "044851ea3113902a29424274f199306749580336"
+    "integration_commit": "66cf589cb537b5f69fd8c616db37d83093676a37"
   },
   "dossier_sha256": "5dd8b27e16ae131f05bb0c7e1ed115957c50d92a585bf4579c85dd81cc47fc5b",
-  "archive_sha256": "fea6ed5d80015a66ccbaf6c482ca7031b958ce4f7e9ed2f244dbfdfb8fe667da",
+  "archive_sha256": "6c0d33472d87e1efb4a9a68e44ab458a222f33319701819227dee37b7da0330a",
   "files": 147
 }

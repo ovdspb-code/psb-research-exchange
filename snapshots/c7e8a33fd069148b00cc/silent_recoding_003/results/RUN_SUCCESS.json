@@ -1,0 +1,8 @@
+{
+  "status": "FEASIBILITY_CALCULATIONS_COMPLETE",
+  "exit": 0,
+  "old_runner_executed": false,
+  "biological_measurements_generated": false,
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "script_sha256": "bbdf52d7679ef3d7950953667ec230761f3eaefa7377ac036bd9b771b6c8505c"
+}

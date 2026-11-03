@@ -42,5 +42,5 @@
   "silent_recoding_004_result_commit": "4ec64708ab5f1b4e74732ec0bbbfb8f5c740237a",
   "silent_recoding_004_independent_review": "PENDING",
   "silent_recoding_004_scope": "No R1 or 003 rerun, new candidates, mutation simulation or contacts; independent sums/KL/CP with retained source bytes",
-  "integration_commit": "044851ea3113902a29424274f199306749580336"
+  "integration_commit": "66cf589cb537b5f69fd8c616db37d83093676a37"
 }

@@ -1,0 +1,9 @@
+file,library,variant,rows,finite_fits,missing_fits,mean_legacy_fit,interpretation
+results/binding_Kd/bc_binding.csv,lib1,Y163N,20,14,6,10.599963714285714,legacy individual fits; not replicate of current pooled-variant fit; no biological CI
+results/binding_Kd/bc_binding.csv,lib1,WT,10986,8210,2776,10.411685241656517,legacy individual fits; not replicate of current pooled-variant fit; no biological CI
+results/binding_Kd/bc_binding.csv,lib2,Y163N,24,17,7,10.485842823529412,legacy individual fits; not replicate of current pooled-variant fit; no biological CI
+results/binding_Kd/bc_binding.csv,lib2,WT,12299,9318,2981,10.442200689954927,legacy individual fits; not replicate of current pooled-variant fit; no biological CI
+results/expression_meanF/bc_expression.csv,lib1,Y163N,20,18,2,9.303779555555556,legacy individual fits; not replicate of current pooled-variant fit; no biological CI
+results/expression_meanF/bc_expression.csv,lib1,WT,10986,10022,964,10.397261855018959,legacy individual fits; not replicate of current pooled-variant fit; no biological CI
+results/expression_meanF/bc_expression.csv,lib2,Y163N,24,22,2,9.142457045454545,legacy individual fits; not replicate of current pooled-variant fit; no biological CI
+results/expression_meanF/bc_expression.csv,lib2,WT,12299,11148,1151,10.446979234571224,legacy individual fits; not replicate of current pooled-variant fit; no biological CI

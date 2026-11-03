@@ -1,0 +1,4 @@
+role,length_H,length_L,paired_protein_id,scFv_position,IMGT,LC_S93_codon,variable_AA_same
+FOCAL_ancestor,112,107,P_abadea0d98857de8,163,Y42(L)N,AGC,True
+FOCAL_current,112,107,P_abadea0d98857de8,163,Y42(L)N,AGT,True
+FOCAL_rewrite,112,107,P_abadea0d98857de8,163,Y42(L)N,AGC,True

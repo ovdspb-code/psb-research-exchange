@@ -1,0 +1,8 @@
+{
+  "status": "AUTHOR_REPLAY_VERIFIED_NOT_INDEPENDENT_ACCEPTANCE",
+  "same_metrics_bytes": true,
+  "metrics_sha256": "71ff7d9661ad2c81ab0ea9ec45febd55a8ee846ccd7689ade23e962eec383040",
+  "preserved_release": true,
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python3 reproduce.py --rerun",
+  "replay_completed_utc": "2026-10-02T20:01:54.774959+00:00"
+}
