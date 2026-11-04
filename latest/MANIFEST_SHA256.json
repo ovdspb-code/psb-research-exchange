@@ -1,8 +1,8 @@
 {
-  "snapshot": "c7e8a33fd069148b00cc",
+  "snapshot": "2a3d3303db8d1582669d",
   "sha256": {
     "DOSSIER_RU.md": "5dd8b27e16ae131f05bb0c7e1ed115957c50d92a585bf4579c85dd81cc47fc5b",
-    "SOURCE.json": "7fb152881cd27e4682edd35ff724d10a1372b41b402cce2de2166bf4f64d9f7b",
+    "SOURCE.json": "1b7feb143d23b13886071484969099fd9449da7db9fe41a79815e098d50c1393",
     "maintenance_boundary/AUDIT_RU.md": "d369af5eab0cc2da44add228e8d06ec23512344935da715f848898ba30258720",
     "maintenance_boundary/MANIFEST_SHA256.json": "ab09adad6bcc5c1c82e8bd15eafa8f276625cababbbbb944e5b4c61415765355",
     "maintenance_boundary/PROOF_RU.md": "9c0bdcfa57216f6a0cbc4f94790d5cd5553ef79167e88eefaf898df29705a3c4",

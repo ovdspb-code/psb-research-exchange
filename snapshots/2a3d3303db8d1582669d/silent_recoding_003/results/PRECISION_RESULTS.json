@@ -1,0 +1,15 @@
+{
+  "epsilon": 0.00095,
+  "minimum_conditional_margin": 0.00192157,
+  "residual_smallest_margin_after_2epsilon": 2.1570000000000053e-05,
+  "per_role_sufficient_n_iid_TV": 824828591,
+  "sample_count_is_not_lower_bound": true,
+  "event_capture_efficiency_sensitivity": {
+    "1": 824828591,
+    "0.5": 1649657182,
+    "0.1": 8248285910,
+    "0.01": 82482859100
+  },
+  "efficiency_scope": "conditional mean screened-history planning only under capture independent of outcome; no high-probability collection guarantee; no known physical capture rate",
+  "cluster_note": "n counts independent sampled lineages/batches under declared law; repeated reads reduce measurement error only; an n_eff heuristic is not a certificate"
+}

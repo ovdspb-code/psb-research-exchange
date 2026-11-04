@@ -1,0 +1,140 @@
+{
+  "scientific_decision": "NO_GO_ON_FINITE_DOSE_PREDICTIVE_TRANSFER",
+  "execution_is_not_independent_acceptance": true,
+  "primary_duration": 0.3,
+  "gates": {
+    "complete_restoration_and_future_hits": true,
+    "fixed_representation_negative_control": true,
+    "sign_prediction": true,
+    "quantitative_skill": false,
+    "bootstrap_beats_zero": true,
+    "median_relative_error": false,
+    "selective_shape_skill": true,
+    "selective_shape_energy": true,
+    "response_mismatch_does_not_explain_contrast": true,
+    "predeclared_numerical_refinement": true,
+    "event_derivative_independently_checked": true
+  },
+  "summaries": {
+    "0.1": {
+      "expected_rows": 36,
+      "measured_rows": 36,
+      "failed_or_censored_rows": 0,
+      "sign_accuracy": 1.0,
+      "resolved_rows": 36,
+      "median_relative_error": 0.10743975706608189,
+      "max_mismatch_fraction": 0.006453622039523554,
+      "median_absolute_relative_contrast": 5.819135890688424e-05,
+      "skill": 0.9827756812434713,
+      "bootstrap_mse_improvement_CI95": [
+        8.10970498610748e-09,
+        4.924061701297639e-08
+      ],
+      "bootstrap_unit": "initial state, all three tasks as one block",
+      "shape_skill": 0.9892113189010575,
+      "shape_energy_fraction": 0.3060727406499086,
+      "seed_mse_improvement": {
+        "101": 6.93677191682915e-09,
+        "102": 1.5363778314510648e-07,
+        "103": 2.4774897851040358e-08,
+        "104": 2.130085440797753e-09,
+        "105": 1.035188258616308e-08,
+        "106": 2.023501913356467e-08,
+        "107": 1.3186822820698678e-08,
+        "108": 1.2438540752831342e-10,
+        "109": 2.550992996127658e-08,
+        "110": 1.051405451718096e-08,
+        "111": 4.108209852971739e-09,
+        "112": 1.0719594142082632e-08
+      }
+    },
+    "0.3": {
+      "expected_rows": 36,
+      "measured_rows": 36,
+      "failed_or_censored_rows": 0,
+      "sign_accuracy": 1.0,
+      "resolved_rows": 36,
+      "median_relative_error": 0.6888482869194217,
+      "max_mismatch_fraction": 0.0002521293799114473,
+      "median_absolute_relative_contrast": 0.00037253816477714094,
+      "skill": 0.3854345887329351,
+      "bootstrap_mse_improvement_CI95": [
+        1.3944553003279852e-07,
+        5.001756989145241e-07
+      ],
+      "bootstrap_unit": "initial state, all three tasks as one block",
+      "shape_skill": 0.6023670388483408,
+      "shape_energy_fraction": 0.35033183493951614,
+      "seed_mse_improvement": {
+        "101": 2.0844162177836243e-07,
+        "102": 9.140778529748955e-07,
+        "103": 1.8201902930627632e-07,
+        "104": 4.393759422307887e-08,
+        "105": 1.901286177938878e-07,
+        "106": 5.085612782796571e-07,
+        "107": 2.5283051084776756e-07,
+        "108": 4.3113411345053165e-09,
+        "109": 9.873211788665395e-07,
+        "110": 2.051325987045381e-07,
+        "111": 1.1030100781161265e-07,
+        "112": 3.1045488977918114e-08
+      }
+    }
+  },
+  "restore_max_L2": 1.0000000974677885e-09,
+  "linear_control_max_relative_difference": 3.4344594458471095e-15,
+  "max_event_derivative_FD_relative_error": 1.7113128696881906e-07,
+  "refinements": [
+    {
+      "seed": 101,
+      "task": "u",
+      "absolute_difference": 1.162936413834359e-11,
+      "fraction": 5.985868838476878e-08
+    },
+    {
+      "seed": 101,
+      "task": "v",
+      "absolute_difference": 2.0802137790099096e-11,
+      "fraction": 2.7598784459492926e-08
+    },
+    {
+      "seed": 101,
+      "task": "z",
+      "absolute_difference": 2.265987397720437e-11,
+      "fraction": 3.916246025716985e-08
+    },
+    {
+      "seed": 102,
+      "task": "u",
+      "absolute_difference": 1.508839719832622e-10,
+      "fraction": 5.405128196204396e-08
+    },
+    {
+      "seed": 102,
+      "task": "v",
+      "absolute_difference": 4.766853578530572e-12,
+      "fraction": 2.721974121742512e-09
+    },
+    {
+      "seed": 102,
+      "task": "z",
+      "absolute_difference": 3.764100142689131e-11,
+      "fraction": 1.5118325132979293e-08
+    }
+  ],
+  "all_seed_ids": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112
+  ],
+  "excluded_seeds": []
+}

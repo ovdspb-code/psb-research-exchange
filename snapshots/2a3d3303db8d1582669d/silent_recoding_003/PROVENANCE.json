@@ -1,0 +1,29 @@
+{
+  "date": "2026-10-09",
+  "new_task": "003",
+  "accepted_R1_reopened": false,
+  "retained_source_files": [
+    {
+      "file": "all_destination_weights.csv",
+      "accepted_sha256": "900a9a7a21dc372ce5d79532b1287bac894f038f78ec14f2bc351018b16b10e4"
+    },
+    {
+      "file": "planned_starting_constructs.csv",
+      "accepted_sha256": "f8e67017dfcf9e2f74990dcc9a4408e176aecd24deaecaebe8432b8db0596064"
+    },
+    {
+      "file": "frozen_candidates.csv",
+      "accepted_sha256": "cdbfdd8371ec874de1f3e84c8bca6ddbd0785eb870d982891a3d78f7a0b24726"
+    },
+    {
+      "file": "planned_phenotype_panel.csv",
+      "accepted_sha256": "f5af1618a96d87560c434667627bff3cd9f1928cb74178c3a8d5d690549e780e"
+    }
+  ],
+  "accepted_release_sha256": {
+    "SFP_SILENT_RECODING_002_R1_RESULT_20261009.zip": "1f08683a1ea319cdc260ae0b11ec5598627b8de23a468813653e9cf6f55d7da5",
+    "SFP_SILENT_RECODING_001_RESULT_20261009.zip": "89ecefb695128dfce8be82d5a57901458b67718e57b8568ea2835b005d5e6e22",
+    "SFP_SILENT_RECODING_002_RESULT_20261009.zip": "079422e0b35060e8b1079ac1fdd962b27d6c66c463c81b489f08ce1c51595b66"
+  },
+  "advisor_003_input_sha256": "6cc8a9ba4dc5fc1418c2eb8b01037d0c32129719c80f956336edc1b4c37c2ddd"
+}
