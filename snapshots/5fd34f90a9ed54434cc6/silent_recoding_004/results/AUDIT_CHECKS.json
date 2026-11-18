@@ -1,0 +1,45 @@
+{
+  "marginal_coverage_checks": [
+    {
+      "control": "KL_exact_small_n_marginal_coverage",
+      "worst_noncoverage_on_declared_grid": 0.002160470060780771,
+      "limit": 0.00625,
+      "status": "PASS"
+    },
+    {
+      "control": "CP_exact_small_n_marginal_coverage",
+      "worst_noncoverage_on_declared_grid": 0.005908966064453125,
+      "limit": 0.00625,
+      "status": "PASS"
+    },
+    {
+      "control": "positive_planted_null_and_invalid_counts",
+      "worst_noncoverage_on_declared_grid": null,
+      "limit": null,
+      "status": "PASS"
+    }
+  ],
+  "exact_advisor_panel_comparisons": [
+    {
+      "size": 600,
+      "same_keys_as_advisor": true,
+      "retained_85": true
+    },
+    {
+      "size": 650,
+      "same_keys_as_advisor": true,
+      "retained_85": true
+    },
+    {
+      "size": 800,
+      "same_keys_as_advisor": true,
+      "retained_85": true
+    }
+  ],
+  "counts_fields_are_history_counts": true,
+  "zero_exit_preserved": true,
+  "source_unknowns_not_zeroed": true,
+  "old_R1_or_003_runner_executed": false,
+  "mutation_simulations": 0,
+  "physical_data_generated": false
+}

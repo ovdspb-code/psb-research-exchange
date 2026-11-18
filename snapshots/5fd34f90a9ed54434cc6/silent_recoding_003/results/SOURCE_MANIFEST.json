@@ -1,0 +1,157 @@
+{
+  "files": [
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "README.md",
+      "git_blob": "bd430764528dbf644f6f5723cd48e9010aaa21f7",
+      "lfs": false,
+      "sha256": "587a26b9d360daa85d3110e78c12b36d0004c90d143db89af286a69572cb2b70",
+      "bytes": 5322
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "config.yaml",
+      "git_blob": "eab33d9c32581805d4752147812d786842bbc1ab",
+      "lfs": false,
+      "sha256": "2064b13101ef332279462a11480478ecced5e03fb79ae8dbf9309f92bd757be2",
+      "bytes": 4107
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "Snakefile",
+      "git_blob": "45b03f0f53ca9112952199a5b44fabd7be38e2f1",
+      "lfs": false,
+      "sha256": "dd59033e433133d6b1e22dccac2184f562866dd23acb77aed6108e18595c5f76",
+      "bytes": 11086
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "compute_binding_Kd.Rmd",
+      "git_blob": "ea26ef016598623e420d27561601a2a187eb8a06",
+      "lfs": false,
+      "sha256": "16414c08ad3ae1a033fc5e2d0a6e93c7ea2514f84126dab35dc8e64f58bc7bd6",
+      "bytes": 25995
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "compute_expression_meanF.Rmd",
+      "git_blob": "9521c971edb165b7fea6364b3abcf431d73e6209",
+      "lfs": false,
+      "sha256": "f65811d74b3c30126611c4cc424029d7c8d6568a9c22f55df24e343eb8f07780",
+      "bytes": 9472
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "collapse_scores.Rmd",
+      "git_blob": "591f971a9abf9843a30b0f8af7bd248424b0200d",
+      "lfs": false,
+      "sha256": "38b8611b1f67644ff3545049b926dd7d82df0df49f26b0208aa2108f5123bab5",
+      "bytes": 21929
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "data/wildtype_sequence.fasta",
+      "git_blob": "1e9ef66f24c829295da396f311ca73be0866dd7b",
+      "lfs": false,
+      "sha256": "900213f6a57064f86b1a2b072782f0261693f8793f5ffb421dd8acd6bc2ef330",
+      "bytes": 715
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "data/CGGnaive_sites.csv",
+      "git_blob": "dae8387656b80469c5c6a6ed1789df747fe54604",
+      "lfs": false,
+      "sha256": "0273836f2495f13c51a29fe97b1a5fea90a3d92303ceb976a50937b7b1fe20a0",
+      "bytes": 5127
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "data/barcode_runs.csv",
+      "git_blob": "d3d3461ade007b49f8411f8ad921b600cc835a59",
+      "lfs": false,
+      "sha256": "6cb5106e655541b2885fea3d8a6686b0dc40ebd0c857370fc9b0ce7ba0153550",
+      "bytes": 45930
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/summary/compute_expression_meanF.md",
+      "git_blob": "c95f1eeb02ebd58e35cf3599c85ba9e448818d34",
+      "lfs": false,
+      "sha256": "869cf5185de4fe3268c2e2d6881784f3c835562311d5a137446fa963ed3aa7cf",
+      "bytes": 11592
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/summary/Titeseq-modeling.md",
+      "git_blob": "a2dc9e4206b47da4a4625d67b693482054a74347",
+      "lfs": false,
+      "sha256": "ca25ac10c4247987d24f4d5270f9b2c884d24af85921a4784f75ea4fc59c7ed9",
+      "bytes": 78649
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/binding_Kd/bc_binding.csv",
+      "git_blob": "8cac4abfa5e6af8aed7e946e2a0006004bd532bd",
+      "lfs": true,
+      "sha256": "1994b7a70e2a464b2ebb991d2002990cb56cc5ec50203dcd30688c8474b8cf53",
+      "bytes": 15809399
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/binding_Kd/variant_binding.csv",
+      "git_blob": "22bd6db40e54f01bcda860bb529a2b7309b27a6c",
+      "lfs": true,
+      "sha256": "421648cfca90e54662e45a40937dff407d874229ea0ab4c4fa6b03bfa1d09bf6",
+      "bytes": 3006192
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/expression_meanF/bc_expression.csv",
+      "git_blob": "614400c28ba4b33feeefbeb99afbbcd2d0a62d98",
+      "lfs": true,
+      "sha256": "5ec3f719a69eddfbfd0b4fe7fd2ece8b26fd523e43aa8ad6fef93313b43272f3",
+      "bytes": 16002014
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/expression_meanF/variant_expression.csv",
+      "git_blob": "bd6cb167a491408fb5dcc48ab925d7323f666c97",
+      "lfs": true,
+      "sha256": "f1e65893be63cea2338649f3b9acd173ed9320d213e9d35f224dc787018e83dd",
+      "bytes": 1525743
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/variants/codon_variant_table.csv",
+      "git_blob": "3cf780c31d11029ebf585872c99faf25ac1e483c",
+      "lfs": true,
+      "sha256": "3d1504047ba6b9dd11fc4b3a74587f7e44f8f5bd82103b6f9b7580e4b97d1cf7",
+      "bytes": 10177410
+    },
+    {
+      "repository": "jbloomlab/Ab-CGGnaive_DMS",
+      "commit": "5ffc88950f760a297e2196ac449111e3db023e80",
+      "path": "results/final_variant_scores/final_variant_scores.csv",
+      "git_blob": "eaa8c495e1bf40f81da7133ab46b834cab1f1db2",
+      "lfs": true,
+      "sha256": "52c1725d4312a27075495a4a9f85e03cb76ebd6df987a19d093867729f97dc9b",
+      "bytes": 422393
+    }
+  ]
+}

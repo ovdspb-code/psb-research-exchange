@@ -1,0 +1,51 @@
+{
+  "status": "ENDPOINT_ONLY_NO_GO; ORDERED_OR_VALIDATED_KERNEL_CONDITIONAL",
+  "exact_paths": 243,
+  "ambiguous_endpoint_groups": 78,
+  "focal_S93_source_codons": {
+    "ancestor": "AGC",
+    "current": "AGT",
+    "rewrite": "AGC"
+  },
+  "witnesses": [
+    [
+      "AGT",
+      "AAT",
+      "AAA"
+    ],
+    [
+      "AGT",
+      "AGA",
+      "AAA"
+    ]
+  ],
+  "synthetic_enum_phi2": "31/100",
+  "synthetic_scope": "instrument check only; not biological observations",
+  "model_only_group_masses": {
+    "ancestor": {
+      "known_useful": 0.00926116264739335,
+      "unknown": 0.3701226740875281,
+      "known_nonuseful": 0.5181862189839708,
+      "no_exit": 0.10242994428110785
+    },
+    "current": {
+      "known_useful": 0.0010996256712988237,
+      "unknown": 0.36576618621151635,
+      "known_nonuseful": 0.5350209964653517,
+      "no_exit": 0.09811319165183308
+    },
+    "rewrite": {
+      "known_useful": 0.014678029483133667,
+      "unknown": 0.3773596495353564,
+      "known_nonuseful": 0.5042998683176936,
+      "no_exit": 0.10366245266381635
+    }
+  },
+  "model_only_coarse_contrast_lower": {
+    "loss": -0.35760464923542185,
+    "rewrite": -0.3521877823996815,
+    "restore": -0.36470580725178775
+  },
+  "coarse_85_status_interface_sufficient": false,
+  "coarse_scope": "model illustrates loss of common-label cancellation; not measured probabilities"
+}

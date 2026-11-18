@@ -1,0 +1,30 @@
+[
+  {
+    "panel": 85,
+    "objects": 107,
+    "endpoints": 214,
+    "baseline_objects": 3,
+    "state": "TEMPLATE_ONLY; valid assay intervals and scale calibration required"
+  },
+  {
+    "panel": 600,
+    "objects": 622,
+    "endpoints": 1244,
+    "baseline_objects": 3,
+    "state": "TEMPLATE_ONLY; valid assay intervals and scale calibration required"
+  },
+  {
+    "panel": 650,
+    "objects": 672,
+    "endpoints": 1344,
+    "baseline_objects": 3,
+    "state": "TEMPLATE_ONLY; valid assay intervals and scale calibration required"
+  },
+  {
+    "panel": 800,
+    "objects": 822,
+    "endpoints": 1644,
+    "baseline_objects": 3,
+    "state": "TEMPLATE_ONLY; valid assay intervals and scale calibration required"
+  }
+]

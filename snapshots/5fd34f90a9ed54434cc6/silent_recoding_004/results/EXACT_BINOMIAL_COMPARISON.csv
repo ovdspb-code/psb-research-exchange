@@ -1,0 +1,7 @@
+panel,bias,method,first_passing_n_on_1000_grid_NOT_global_minimum,loss_lower,restore_lower,conditional_power_lower_bound,KL_n_comparator
+600,0.0,exact CP confidence + exact binomial power quantiles,179000,0.0005116797278566163,1.56246702102264e-06,0.9506566211662699,300102
+600,0.0001,exact CP confidence + exact binomial power quantiles,217000,0.00047292398536064734,1.3120466040156264e-06,0.9507574452632281,363627
+650,0.0,exact CP confidence + exact binomial power quantiles,86000,0.0007704610516501113,2.0942419582073435e-05,0.951366081999345,143108
+650,0.0001,exact CP confidence + exact binomial power quantiles,98000,0.000729866508211087,2.1948890391046416e-05,0.9507147713879854,163332
+800,0.0,exact CP confidence + exact binomial power quantiles,85000,0.000774516214332395,1.7693590978265505e-05,0.9512972384881265,141580
+800,0.0001,exact CP confidence + exact binomial power quantiles,97000,0.0007340309393216171,2.0057903928151488e-05,0.9512323992554054,161474
